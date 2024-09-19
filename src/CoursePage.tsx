@@ -7,11 +7,12 @@ const CoursePage = () => {
   const [isBlenderOpen, setIsBlenderOpen] = useState(false);
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     setActiveIndex(index);
   };
+  
 
   return (
     <div className="">
